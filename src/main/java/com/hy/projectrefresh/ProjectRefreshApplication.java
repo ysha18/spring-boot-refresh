@@ -1,6 +1,7 @@
 package com.hy.projectrefresh;
 
 import com.hy.projectrefresh.services.ApplicationProperties;
+import org.springframework.boot.Banner.Mode;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
@@ -17,7 +18,9 @@ public class ProjectRefreshApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(ProjectRefreshApplication.class, args);
+		SpringApplication app = new SpringApplication((ProjectRefreshApplication.class));
+		app.setBannerMode(Mode.OFF);
+		app.run(args);
 	}
 
 }

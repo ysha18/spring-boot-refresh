@@ -12,8 +12,8 @@ public class MyService {
   private final MyRepository myRepository;
   private final Environment environment;
 
-  public void display(){
-    System.out.println(environment.getProperty("myprops.isDemoApp"));
+  public void displayExtProperty(){
+    System.out.println(environment.getProperty("app.isDemoApp"));
   }
 
 }
