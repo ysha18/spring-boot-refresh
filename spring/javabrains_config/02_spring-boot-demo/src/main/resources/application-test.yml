@@ -1,0 +1,6 @@
+management.endpoints.web.exposure.include: "*"
+hello.world: HELLO WORLD
+db:
+  connection: test-connection-string
+  host: www.test.com
+  port: 7777

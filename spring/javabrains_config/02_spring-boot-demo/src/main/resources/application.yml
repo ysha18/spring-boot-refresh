@@ -1,0 +1,15 @@
+management.endpoints.web.exposure.include: "*"
+hello.world: HELLO WORLD
+db:
+  connection: connection
+  host: www.example.com
+  port: 4048
+
+spring:
+  profiles:
+    active: test
+  application:
+    name: microservice2
+
+
+spring.cloud.connfig.uri: http://localhost:8888

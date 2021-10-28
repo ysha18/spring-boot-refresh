@@ -1,0 +1,8 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        show_sql: true
+        use_sql_comments: true
+
+my.greetings: Hello World
